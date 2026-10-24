@@ -56,6 +56,8 @@ a { color: var(--blue-fg); }
 .btn.solid { background: var(--navy); color: var(--navy-fg); }
 .btn.outline { border-color: var(--navy); color: var(--navy); }
 main .wrap { padding-block: 32px 48px; display: grid; gap: 44px; }
+main .wrap > * { min-width: 0; }
+.two > *, .grid > * { min-width: 0; }
 section > h2, .page-title { font-family: var(--font-display); font-weight: 600; font-size: 26px; margin: 0 0 8px; color: var(--navy); text-wrap: balance; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) section > h2, :root:not([data-theme="light"]) .page-title, :root:not([data-theme="light"]) h3 { color: var(--green); } }
 :root[data-theme="dark"] section > h2, :root[data-theme="dark"] .page-title, :root[data-theme="dark"] h3 { color: var(--green); }
@@ -102,7 +104,7 @@ th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: 
 tbody tr:last-child td { border-bottom: 0; }
 td.month { white-space: nowrap; font-variant-numeric: tabular-nums; }
 td.event { font-weight: 500; }
-.kv { min-width: 0; }
+table.kv { min-width: 0; }
 .kv th { width: 34%; text-transform: none; letter-spacing: 0; font-size: 14.5px; color: var(--fg); background: transparent; }
 @media (max-width: 640px) {
   table.stack { min-width: 0; }
